@@ -14,6 +14,7 @@ const Home = () => (
       <article class="helvetica pb5">
         <header class="vh-100 dt w-100">
           <div class="dtc pt5 v-mid cover ph3 ph4-m ph5-l">
+            <img src="/static/img/freshy-144.png" />
             <h1 class="f2 f-subheadline-l f-subheadline-ns  measure lh-title fw9">
               Freshly Breemed
             </h1>
@@ -84,7 +85,7 @@ const Home = () => (
                 </svg>
               </a>
             </div>
-            <img class="w-50" src="/static/img/youtube.jpg" />
+            <img class="w-60" src="/static/img/othello-shot.jpg" />
           </div>
         </header>
         <header class="vh-100 dt w-100">
