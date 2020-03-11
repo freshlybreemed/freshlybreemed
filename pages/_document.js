@@ -18,15 +18,12 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="stylesheet" href="/static/styles.min.css" />
 
-           <link
+          <link
             rel="icon"
             type="image/x-icon"
-            href="https://blachaz3.now.sh/static/img/BLACHAZ3.png"
+            href="/static/img/freshly_144.ico"
           />
-            <meta
-              property="og:image"
-              content="https://blachaz3.now.sh/static/img/_DSC4787-4.jpg"
-            />
+          <link rel="shortcut icon" href="/static/img/freshy_144.ico" />
           {/*
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
