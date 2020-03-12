@@ -7,7 +7,7 @@ const Footer = () => (
   <footer class="pa4 pa5-l bg-black-70 white bt b--black-10">
     <section class="cf mb5">
       <div class="mb4 mb0-ns fl w-100 w-50-l">
-        <h1 class="f3 f-subheadline-l f-subheadline-ns  measure lh-title fw9">
+        <h1 class="f3 f-subheadline-l f-subheadline-ns  measure lh-title fw7">
           Freshly Breemed
         </h1>
         <div class="f5 f3-ns  measure fw5">+1.240.205.3485</div>
