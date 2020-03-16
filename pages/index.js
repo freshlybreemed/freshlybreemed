@@ -1,11 +1,11 @@
-import { styles } from '../constants/styles';
-import React from 'react';
+import { styles } from "../constants/styles";
+import React from "react";
 // import SignUpForm from '../components/SignUpForm';
-import Wrapper from '../components/Wrapper';
+import Wrapper from "../components/Wrapper";
 
 const data = {
-  description: 'Fist Up Afros Out',
-  header: `Blachaz3`,
+  description: "Fist Up Afros Out",
+  header: `Blachaz3`
 };
 
 const Home = () => (
@@ -19,9 +19,9 @@ const Home = () => (
               Freshly Breemed
             </h1>
             <h2 class="f4 f2-ns  measure lh-title fw7">
-              Hello, my name is Ebrima. I am a software engineer, DJ and
-              creative director. Most of my work focuses on building things,
-              solving problems and pushing boundaries to bridge the gap between
+              Hello, my name is Ebrima. I am a product engineer, DJ and creative
+              director. Most of my work focuses on building things, solving
+              problems and pushing boundaries to bridge the gap between
               technology, music and cultural connections.
             </h2>
             <div class="pb5">
