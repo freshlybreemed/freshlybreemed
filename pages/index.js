@@ -1,6 +1,6 @@
 import { styles } from "../constants/styles";
 import React from "react";
-// import SignUpForm from '../components/SignUpForm';
+import Link from "next/link";
 import Wrapper from "../components/Wrapper";
 
 const data = {
@@ -72,21 +72,32 @@ const Home = () => (
                 </svg>
               </a>
             </div>
-            <img class="w-60" src="/static/img/othello-shot.jpg" />
+            <img class="w-60" src="/static/img/youtube.jpg" />
           </div>
         </header>
-        <header class="vh-100 dt w-100">
-          <div class="dtc v-mid cover ph3 ph4-m ph5-l">
+        <header class="dt w-100">
+          <div class="dtc cover ph3 ph4-m ph5-l">
             <h1 class="f2 f-subheadline-l f-subheadline-ns  measure lh-title fw9">
               Projects
             </h1>
-            <h2 class="f4 f2-ns  measure lh-title fw7">Freshly Breemed</h2>
-            <h2 class="f4 f2-ns  measure lh-title fw7">
-              Chicken & Mumbo Sauce
+            <h2 class="f4 f2-ns measure lh-title fw7">
+              <Link href="https://clouty.io">
+                <a class="no-underline black-80">Clouty</a>
+              </Link>
             </h2>
-            <h2 class="f4 f2-ns  measure lh-title fw7">Crank Karaoke</h2>
-            <h2 class="f4 f2-ns  measure lh-title fw7">Clouty</h2>
-            <h2 class="f4 f2-ns  measure lh-title fw7">BlacHaz3</h2>
+            <p>The world's first music betting platform</p>
+            <h2 class="f4 f2-ns  measure lh-title fw7">
+              <Link href="https://chickenandmumbosauce.com">
+                <a class="no-underline black-80">Chicken & Mumbo Sauce</a>
+              </Link>
+            </h2>
+            <p>Event collective based out of Washington, DC</p>
+            <h2 class="f4 f2-ns  measure lh-title fw7">
+              <Link href="https://crankkaraoke.com">
+                <a class="no-underline black-80">Crank Karaoke</a>
+              </Link>
+            </h2>
+            <p>Go-go inspired karaoke event based out of Washington, DC</p>
           </div>
         </header>
       </article>
