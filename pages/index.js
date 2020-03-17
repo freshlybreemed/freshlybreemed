@@ -128,7 +128,6 @@ const Home = () => (
                 </svg>
               </a>
             </div>
-            <img class="w-60" src="/static/img/youtube.jpg" />
           </div>
         </header>
         <header class="dt w-100">
