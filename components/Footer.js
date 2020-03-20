@@ -1,7 +1,7 @@
-import React from 'react';
-import { styles } from '../constants/styles';
+import React from "react";
+import { styles } from "../constants/styles";
 
-import { getCurrentYear } from '../lib/helpers';
+import { getCurrentYear } from "../lib/helpers";
 
 const Footer = () => (
   <footer class="pa4 pa5-l bg-black-70 white bt b--black-10">
@@ -10,7 +10,9 @@ const Footer = () => (
         <h1 class="f3 f-subheadline-l f-subheadline-ns  measure lh-title fw7">
           Freshly Breemed
         </h1>
-        <div class="f5 f3-ns  measure fw5">+1.240.205.3485</div>
+        <div class="f5 f3-ns white no-underline measure fw5">
+          +1.240.205.3485
+        </div>
         <div class="f5 f3-ns  measure fw5">
           <a href="mailto:freshlybreemed@gmail.com" class="no-underline white">
             freshlybreemed@gmail.com

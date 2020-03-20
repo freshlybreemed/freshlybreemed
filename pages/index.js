@@ -12,7 +12,7 @@ const Home = () => (
   <div>
     <Wrapper data={data}>
       <article class="helvetica pb5">
-        <header class="vh-100 dt w-100">
+        <header class="vh-80 dt w-100">
           <div class="dtc pt5 v-mid cover ph3 ph4-m ph5-l">
             <img class="w-20" src="/static/img/freshy-144.png" />
             <h1 class="f2 f-subheadline-l f-subheadline-ns  measure lh-title fw9">
@@ -24,17 +24,17 @@ const Home = () => (
               problems and pushing boundaries to bridge the gap between
               technology, music and cultural connections.
             </h2>
-            <div class="pb5">
+            <div class="pb5 pt3">
               <a
                 href="https://www.facebook.com/enjsmoove"
-                class="link dim dib mr3 black-70"
-                title="Impossible Labs on Facebook"
+                class="link dim black-70 dib h2 w2 br-100 mr3 "
+                href="#"
+                title=""
               >
                 <svg
-                  class="db w3 h3"
                   data-icon="facebook"
                   viewBox="0 0 32 32"
-                  fill="currentColor"
+                  style={{ fill: "currentcolor" }}
                 >
                   <title>facebook icon</title>
                   <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z"></path>
@@ -42,20 +42,21 @@ const Home = () => (
               </a>
               <a
                 href="https://twitter.com/freshlybreemed"
-                class="link dim  dib mr3 black-70"
+                class="link dim black-70 dib h2 w2 br-100 mr3 "
+                href="#"
+                title=""
               >
                 <svg
-                  class="db w3 h3"
                   data-icon="twitter"
                   viewBox="0 0 32 32"
-                  fill="currentColor"
+                  style={{ fill: "currentcolor" }}
                 >
                   <title>twitter icon</title>
                   <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
                 </svg>
-              </a>
+              </a>{" "}
               <a
-                class="link hover-silver black-70 dib h3 w3 mr3"
+                class="link hover-silver black-70 dib h2 w2 mr3"
                 href="https://instagram.com/freshlybreemed"
                 title="Instagram"
               >
@@ -72,9 +73,9 @@ const Home = () => (
                 </svg>
               </a>
               <a
-                class="link dim black-70 dib br-100 h3 w3 mr3 "
+                class="link black-70 hover-silver dib h2 w2 mr3"
                 href="https://github.com/freshlybreemed"
-                title=""
+                title="GitHub"
               >
                 <svg
                   fill="currentColor"
@@ -89,7 +90,7 @@ const Home = () => (
                 </svg>
               </a>
               <a
-                class="link hover-silver black-70 dib h3 w3 mr3"
+                class="link hover-silver black-70 dib h2 w2 mr3"
                 href="https://soundcloud.com/freshlybreemed"
                 title="SoundCloud"
               >
@@ -108,7 +109,7 @@ const Home = () => (
                 </svg>
               </a>
               <a
-                class="link hover-silver black-70 dib h3 w3 mr3"
+                class="link hover-silver black-70 dib h2 w2 mr3"
                 href="https://linkedin.com/in/ebrimajobe"
                 title="LinkedIn"
               >
@@ -128,7 +129,6 @@ const Home = () => (
                 </svg>
               </a>
             </div>
-            <img class="w-60" src="/static/img/youtube.jpg" />
           </div>
         </header>
         <header class="dt w-100">
@@ -141,19 +141,33 @@ const Home = () => (
                 <a class="no-underline black-80">Clouty</a>
               </Link>
             </h2>
-            <p>The world's first music betting platform</p>
+            <p>
+              Think fantasy sports, but for music. At the intersection of data,
+              music and finance, Clouty is the world's first music betting
+              platform.
+            </p>
             <h2 class="f4 f2-ns  measure lh-title fw7">
               <Link href="https://chickenandmumbosauce.com">
                 <a class="no-underline black-80">Chicken & Mumbo Sauce</a>
               </Link>
             </h2>
-            <p>Event collective based out of Washington, DC</p>
+            <p>
+              Chicken & Mumbo Sauce is an event-based collective that
+              specializes in producing unique and authentic experiences that
+              reflect the ever-growing creative community and culture of the DMV
+              onto the world.
+            </p>
             <h2 class="f4 f2-ns  measure lh-title fw7">
               <Link href="https://crankkaraoke.com">
                 <a class="no-underline black-80">Crank Karaoke</a>
               </Link>
             </h2>
-            <p>Go-go inspired karaoke event based out of Washington, DC</p>
+            <p>
+              Crank Karaoke, a one of a kind, DMV improv jam session & open mic
+              where the funky sounds of go-go collide with community. Impromptu
+              karaoke moments and creative expression in a safe space with no
+              judgment!
+            </p>
           </div>
         </header>
       </article>
