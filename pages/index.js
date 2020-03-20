@@ -109,7 +109,7 @@ const Home = () => (
                 </svg>
               </a>
               <a
-                class="link hover-silver black-70 dib h2 h3-l w2 w3-l mr3"
+                class="link hover-silver black-70 dib h2 w2 mr3"
                 href="https://linkedin.com/in/ebrimajobe"
                 title="LinkedIn"
               >
@@ -141,19 +141,33 @@ const Home = () => (
                 <a class="no-underline black-80">Clouty</a>
               </Link>
             </h2>
-            <p>The world's first music betting platform</p>
+            <p>
+              Think fantasy sports, but for music. At the intersection of data,
+              music and finance, Clouty is the world's first music betting
+              platform.
+            </p>
             <h2 class="f4 f2-ns  measure lh-title fw7">
               <Link href="https://chickenandmumbosauce.com">
                 <a class="no-underline black-80">Chicken & Mumbo Sauce</a>
               </Link>
             </h2>
-            <p>Event collective based out of Washington, DC</p>
+            <p>
+              Chicken & Mumbo Sauce is an event-based collective that
+              specializes in producing unique and authentic experiences that
+              reflect the ever-growing creative community and culture of the DMV
+              onto the world.
+            </p>
             <h2 class="f4 f2-ns  measure lh-title fw7">
               <Link href="https://crankkaraoke.com">
                 <a class="no-underline black-80">Crank Karaoke</a>
               </Link>
             </h2>
-            <p>Go-go inspired karaoke event based out of Washington, DC</p>
+            <p>
+              Crank Karaoke, a one of a kind, DMV improv jam session & open mic
+              where the funky sounds of go-go collide with community. Impromptu
+              karaoke moments and creative expression in a safe space with no
+              judgment!
+            </p>
           </div>
         </header>
       </article>
