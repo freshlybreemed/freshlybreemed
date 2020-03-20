@@ -19,10 +19,10 @@ const Home = () => (
               Freshly Breemed
             </h1>
             <h2 class="f4 f2-ns  measure lh-title fw7">
-              Hello, my name is Ebrima. I am a product engineer, DJ and creative
-              director. Most of my work focuses on building things, solving
-              problems and pushing boundaries to bridge the gap between
-              technology, music and cultural connections.
+              Hello, my name is Ebrima. I am a product engineer, DJ, event
+              producer and creative director. Most of my work focuses on
+              building things, solving problems and pushing boundaries to bridge
+              the gap between technology, music and cultural connections.
             </h2>
             <div class="pb5 pt3">
               <a
