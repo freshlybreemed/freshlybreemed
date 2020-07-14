@@ -1,11 +1,11 @@
-import { styles } from "../constants/styles";
-import React from "react";
-import Link from "next/link";
-import Wrapper from "../components/Wrapper";
+import { styles } from '../constants/styles';
+import React from 'react';
+import Link from 'next/link';
+import Wrapper from '../components/Wrapper';
 
 const data = {
-  description: "Fist Up Afros Out",
-  header: `Blachaz3`
+  description: '@freshlybreemed',
+  header: `Ebrima Jobe`,
 };
 
 const Home = () => (
@@ -34,7 +34,7 @@ const Home = () => (
                 <svg
                   data-icon="facebook"
                   viewBox="0 0 32 32"
-                  style={{ fill: "currentcolor" }}
+                  style={{ fill: 'currentcolor' }}
                 >
                   <title>facebook icon</title>
                   <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z"></path>
@@ -49,12 +49,12 @@ const Home = () => (
                 <svg
                   data-icon="twitter"
                   viewBox="0 0 32 32"
-                  style={{ fill: "currentcolor" }}
+                  style={{ fill: 'currentcolor' }}
                 >
                   <title>twitter icon</title>
                   <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
                 </svg>
-              </a>{" "}
+              </a>{' '}
               <a
                 class="link hover-silver black-70 dib h2 w2 mr3"
                 href="https://instagram.com/freshlybreemed"
@@ -109,7 +109,7 @@ const Home = () => (
                 </svg>
               </a>
               <a
-                class="link hover-silver black-70 dib h2 h3-l w2 w3-l mr3"
+                class="link hover-silver black-70 dib h2 w2 mr3"
                 href="https://linkedin.com/in/ebrimajobe"
                 title="LinkedIn"
               >
@@ -136,6 +136,12 @@ const Home = () => (
             <h1 class="f2 f-subheadline-l f-subheadline-ns  measure lh-title fw9">
               Projects
             </h1>
+            <h2 class="f4 f2-ns measure lh-title fw7">
+              <Link href="https:/socialticketing.io">
+                <a class="no-underline black-80">Social Ticketing</a>
+              </Link>
+            </h2>
+            <p>Upcoming event discovery/ticketing project</p>
             <h2 class="f4 f2-ns measure lh-title fw7">
               <Link href="https://clouty.io">
                 <a class="no-underline black-80">Clouty</a>
