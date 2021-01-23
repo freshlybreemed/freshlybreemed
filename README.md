@@ -78,31 +78,8 @@
 
 ## &#x1f4c8; GitHub Stats
 
-<a href="https://github.com/Alex1100/Alex1100">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alex1100&show_icons=true&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21&include_all_commits=true&layout=compact" />
-</a>
-<a href="https://github.com/Alex1100/Alex1100">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=Alex1100&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21&include_all_commits=true" alt="" />
-</a>
-
 # Social
-<p align="left">
-	<a href="https://www.linkedin.com/in/alex1100"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=social&logo=linkedin" alt="LinkedIn"></a>
-  <a href="https://www.instagram.com/brokehustla">
-  <img src="https://img.shields.io/badge/Instagram--_.svg?style=social&logo=instagram" /></a>
-</p>
 
 
 # Pinned Repos
-<a href="https://github.com/Alex1100/matterport_task_bot_server">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Alex1100&repo=matterport_task_bot_server&theme=vision-friendly-dark" />
-</a>
-<a href="https://github.com/Alex1100/tinder-swipe-bot">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Alex1100&repo=tinder-swipe-bot&theme=vision-friendly-dark" />
-</a>
-<a href="https://github.com/Alex1100/golang-practice">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Alex1100&repo=golang-practice&theme=vision-friendly-dark" />
-</a>
-<a href="https://github.com/Alex1100/og-equity-compensation">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Alex1100&repo=og-equity-compensation&theme=vision-friendly-dark" />
-</a>
+
