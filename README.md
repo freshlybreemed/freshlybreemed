@@ -76,10 +76,5 @@
 - Hampton University
 - SuperHi
 
-## &#x1f4c8; GitHub Stats
 
-# Social
-
-
-# Pinned Repos
 
