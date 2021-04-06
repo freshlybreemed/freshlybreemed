@@ -59,7 +59,6 @@
 
   <img alt="Stripe" src="https://img.shields.io/badge/-Stripe-008CDD?style=for&logo=stripe&logoColor=white" />
   <img alt="ESLint" src="https://img.shields.io/badge/-ESLint-4B32C3?style=for&logo=eslint&logoColor=white" />
-  <img alt="CircleCI" src="https://img.shields.io/badge/-CircleCI-8669AE?style=for&logo=circleci&logoColor=white" />
   <img alt="MaterialUI" src="https://img.shields.io/badge/-MaterialUI-0081CB?style=for&logo=material-ui&logoColor=white" />
 
 
