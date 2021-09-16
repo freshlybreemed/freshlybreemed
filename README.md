@@ -66,8 +66,9 @@
 
 # Experience
 - DevOps Engineer @ Protenus (Baltimore, MD) 2019
-- Software Engineer @ Intuit (Mountain View, CA) 2021
+- Full Stack Software Engineer (Freelance) @ 2019
 - Full Stack Software Engineer (Contract) @ HighSpeed 2020
+- Software Engineer @ Intuit (Mountain View, CA) 2021
 - Co-Founder @ Clouty 2021
 
 # Education
