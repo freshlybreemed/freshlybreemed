@@ -68,7 +68,7 @@
 - DevOps Engineer @ Protenus (Baltimore, MD) 2019
 - Software Engineer @ Intuit (Mountain View, CA) 2021
 - Full Stack Software Engineer (Contract) @ HighSpeed 2020
-- Co-Founder + CTO @ Clouty 2021
+- Co-Founder @ Clouty 2021
 
 # Education
 - Hack Reactor 
