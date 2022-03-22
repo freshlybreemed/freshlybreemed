@@ -70,6 +70,8 @@
 - Full Stack Software Engineer (Contract) @ HighSpeed 2020
 - Software Engineer @ Intuit (Mountain View, CA) 2021
 - Co-Founder @ Clouty 2021
+- Software Engineer @ Freewill (Remote) 2022
+
 
 # Education
 - Hack Reactor 
