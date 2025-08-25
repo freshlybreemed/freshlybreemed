@@ -29,8 +29,7 @@ const Home = () => (
 							<a
 								href="https://www.facebook.com/enjsmoove"
 								class="link dim black-70 dib h2 w2 br-100 mr3 "
-								href="#"
-								title=""
+								title="Facebook"
 							>
 								<svg
 									data-icon="facebook"
@@ -44,7 +43,6 @@ const Home = () => (
 							<a
 								href="https://twitter.com/freshlybreemed"
 								class="link dim black-70 dib h2 w2 br-100 mr3 "
-								href="#"
 								title=""
 							>
 								<svg
@@ -138,8 +136,8 @@ const Home = () => (
 							Projects
 						</h1>
 						<h2 class="f4 f2-ns measure lh-title fw7">
-							<Link href="https://whatstba.com">
-								<a class="no-underline black-80">TBA</a>
+							<Link href="https://invitetba.xyz" class="no-underline black-80">
+								TBA
 							</Link>
 						</h2>
 						<p>
@@ -148,8 +146,8 @@ const Home = () => (
 							the community.
 						</p>
 						<h2 class="f4 f2-ns measure lh-title fw7">
-							<Link href="https://clouty.io">
-								<a class="no-underline black-80">Clouty</a>
+							<Link href="https://clouty.io" class="no-underline black-80">
+								Clouty
 							</Link>
 						</h2>
 						<p>
@@ -158,8 +156,8 @@ const Home = () => (
 							trading platform.
 						</p>
 						<h2 class="f4 f2-ns  measure lh-title fw7">
-							<Link href="https://chickenandmumbosauce.com">
-								<a class="no-underline black-80">Chicken & Mumbo Sauce</a>
+							<Link href="https://chickenandmumbosauce.com" class="no-underline black-80">
+								Chicken & Mumbo Sauce
 							</Link>
 						</h2>
 						<p>
@@ -169,8 +167,8 @@ const Home = () => (
 							onto the world.
 						</p>
 						<h2 class="f4 f2-ns  measure lh-title fw7">
-							<Link href="https://crankkaraoke.com">
-								<a class="no-underline black-80">Crank Karaoke</a>
+							<Link href="https://crankkaraoke.com" class="no-underline black-80">
+								Crank Karaoke
 							</Link>
 						</h2>
 						<p>
