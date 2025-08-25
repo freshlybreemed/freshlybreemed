@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 import Footer from './Footer';
@@ -62,8 +61,3 @@ export default class Wrapper extends Component {
   }
 }
 
-Wrapper.propTypes = {
-  className: PropTypes.string,
-  data: PropTypes.object,
-  children: PropTypes.node,
-};

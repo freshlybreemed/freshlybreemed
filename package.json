@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev"
   },
   "author": "",
   "license": "ISC",
@@ -13,10 +14,11 @@
     "@types/react": "^16.9.23",
     "date-fns": "^2.10.0",
     "mico": "^0.1.0-0",
-    "next": "^9.3.0",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
+    "next": "^15.5.0",
+    "prop-types": "^15.8.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "react-ga": "^2.7.0",
-    "typescript": "^3.8.3"
+    "typescript": "^5.9.2"
   }
 }
