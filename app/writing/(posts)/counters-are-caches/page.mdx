@@ -1,0 +1,41 @@
+export const metadata = {
+  title: "Counters are caches, rows are truth",
+  description: "The data-model habit behind most of TBA's worst bugs, and how the rebuild fixed it.",
+};
+
+# Counters are caches, rows are truth
+
+<time dateTime="2026-10-17">October 17, 2026</time>
+
+I ran TBA, a ticketing platform, for six years. When I rebuilt it as Offerbased this year, I went back through the bugs organizers had reported. Most of the worst ones traced back to a single habit: storing a number that should have been counted.
+
+## How TBA stored a sale
+
+TBA ran on MongoDB, and nearly everything about an event lived on the event document. Each ticket tier kept its own `sold` number, and every code path that touched tickets adjusted it by hand. A new order added to it. A refund subtracted. Editing an order subtracted from the old tier and added to the new one.
+
+There were no ticket records to recount from. If any one of those paths missed an update, failed halfway, or ran twice, the number was wrong forever, and nothing could tell you by how much.
+
+Money worked the same way. Gross, net and balance were running totals on the event, adjusted with every order and refund.
+
+## What that broke
+
+- **Waitlists opening under capacity.** Sold-out was decided straight from the counter. When the counter drifted high, fans got sent to a waitlist for an event that still had room.
+- **"Total attendees" that wasn't.** Tickets lived as an array inside each order, so there was no record of a person holding a ticket. The dashboard counted unique buyers and called them attendees. One buyer with four tickets showed up as one guest.
+- **Renamed tiers losing their sales.** Counters were keyed by the tier's name, so renaming a tier could detach it from its own history.
+- **Statuses with no rules.** Orders and offers shared one status field with eleven values, including three that meant roughly "paid". Nothing enforced which changes were allowed.
+
+## What the rebuild does instead
+
+Offerbased runs on Postgres, and the model follows how a night actually works:
+
+- An **order** is one buyer's purchase.
+- A **ticket** is one admission, with its own row and status.
+- An **offer** is its own table with its own lifecycle.
+- Tiers are linked by ID, so renaming one is just a rename.
+- Money is integer cents, and balances come from Stripe instead of a running total.
+
+Buyers and attendees are now two different queries, so the dashboard can't mix them up.
+
+There's still a `sold_count` on each tier, because reading one number is faster than counting rows on every page view. The difference is that it's a cache. Ticket rows are the source of truth, and the count can be recomputed from them any time it looks off. In TBA, the counter *was* the truth, so when it drifted, there was nothing to check it against.
+
+That's the whole lesson: keep counters if you need the speed, but make sure you can always rebuild them from rows.

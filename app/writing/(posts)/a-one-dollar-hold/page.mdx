@@ -1,0 +1,35 @@
+export const metadata = {
+  title: "Why an offer starts with a $1 hold",
+  description: "The Stripe flow behind name-your-price tickets on Offerbased.",
+};
+
+# Why an offer starts with a $1 hold
+
+<time dateTime="2026-10-17">October 17, 2026</time>
+
+Offerbased lets fans name their own price for a ticket. The organizer sees the offer and accepts or declines it. That sounds simple until you work out what happens to the fan's card in between.
+
+## The obvious version
+
+Stripe can authorize a payment now and capture it later. So the first design was: when a fan makes a $60 offer, place a $60 hold on their card, then capture it if the organizer accepts.
+
+Two problems:
+
+- **The fan's money is stuck.** A hold can sit on a card for up to seven days. For a lot of our fans, $60 frozen for a week on an offer that might be declined is a real cost.
+- **Holds expire.** If the organizer takes too long, the authorization lapses and there's nothing left to capture.
+
+## What we do instead
+
+When a fan makes an offer, we authorize **$1** and ask Stripe to save the card for later charges (`setup_future_usage: "off_session"`). The $1 proves the card is real and is never captured. It's released when the offer is accepted, declined or expires.
+
+If the organizer accepts, we charge the full offer amount to the saved card right then, as a normal Connect destination charge: the money goes to the organizer, and the platform fee is taken in the same payment.
+
+Organizers can also set an auto-accept price on a tier. Any offer at or above it is accepted instantly, so they don't have to approve every one by hand.
+
+## The tradeoff
+
+A charge the fan isn't present for can fail. The card might need a 3D Secure check, or the money might not be there anymore. So accepting an offer creates the order and its tickets first, and rolls both back if the charge fails, so a failed charge never leaves tickets behind that nobody paid for.
+
+Offers that sit too long are expired by a scheduled job. It only updates offers that are still pending, so two runs can't process the same one, and it stamps each offer once it's notified so nobody gets the same email twice. The dashboard also works out expiry when it reads offers, so it's accurate even between job runs.
+
+It's a little more machinery than a single hold, but nobody's rent is sitting in limbo waiting on a promoter's answer.
