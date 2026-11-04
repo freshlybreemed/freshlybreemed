@@ -5,7 +5,7 @@ export const profile = {
   handle: "freshlybreemed",
   city: "New York",
   intro:
-    "Software engineer in New York. I build ticketing for parties, and on weekends I'm the one playing them. I also take on client sites with a small team of designers, writers and engineers.",
+    "Software engineer, DJ and photographer in New York. I build ticketing for parties, and on weekends I'm the one playing them. I also take on client sites with a small team of designers, writers and engineers.",
   origin:
     "First-generation Gambian American from Silver Spring, by way of LA. Hampton University alum.",
   photo: "/static/img/breemz.jpg",
@@ -55,7 +55,6 @@ export const projects: Project[] = [
       "Migrated TBA's events and order history, and redirected upcoming events so no fan link broke.",
     ],
     stack: "Next.js, tRPC, Supabase Postgres, Stripe Connect, Twilio, Vercel",
-    post: { href: "/writing/a-one-dollar-hold", title: "Why an offer starts with a $1 hold" },
     href: "https://offerbased.com",
     image: "/static/img/work/offerbased.jpg",
   },
@@ -72,7 +71,6 @@ export const projects: Project[] = [
     stack: "Next.js, MongoDB, Stripe, Paystack, Twilio, Redis, AWS Lambda",
     href: "https://whatstba.com",
     image: "/static/img/work/tba.jpg",
-    post: { href: "/writing/counters-are-caches", title: "Counters are caches, rows are truth" },
   },
 ];
 

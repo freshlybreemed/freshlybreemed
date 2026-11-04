@@ -8,7 +8,6 @@ function Shot({ src, href, name }: { src: string; href?: string; name: string })
   return href ? <a href={href} className="shot-link" target="_blank" rel="noopener noreferrer">{img}</a> : img;
 }
 
-import { formatDate, posts } from "@/content/posts";
 
 export default function Home() {
   const [first, last] = profile.name.split(" ");
@@ -26,7 +25,7 @@ export default function Home() {
           <Ticket />
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="hero-photo" src={profile.photo} alt="Ebrima Jobe in a jean jacket" width={1000} height={1500} />
+        <img className="hero-photo" src={profile.photo} alt="Ebrima Jobe at his turntables at home" width={1200} height={800} />
       </section>
 
       <section className="section" id="work" aria-labelledby="work-title">
@@ -118,22 +117,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="writing" aria-labelledby="writing-title">
-        <h2 className="section-title" id="writing-title">
-          Writing
-        </h2>
-        <ul className="post-list">
-          {posts.map((p) => (
-            <li key={p.slug}>
-              <Link href={`/writing/${p.slug}`} className="post-link">
-                {p.title}
-              </Link>
-              <p className="post-summary">{p.summary}</p>
-              <time dateTime={p.date}>{formatDate(p.date)}</time>
-            </li>
-          ))}
-        </ul>
-      </section>
     </>
   );
 }

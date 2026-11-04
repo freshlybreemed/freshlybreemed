@@ -12,7 +12,6 @@ export default function SiteNav() {
       <nav aria-label="Main">
         <ul className="nav-links">
           <li><Link href="/#work">Work</Link></li>
-          <li><Link href="/writing">Writing</Link></li>
           <li><Link href="/photos">Photos</Link></li>
           <li><Link href="/#mixes">Mixes</Link></li>
           <li><Link href="/#contact">Contact</Link></li>
