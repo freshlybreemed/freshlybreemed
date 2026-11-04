@@ -123,7 +123,7 @@ export const moreProjects: SideProject[] = [
   {
     name: "Dare Dollz",
     years: "2020 to 2023",
-    href: "https://daredollz.com",
+    href: "https://daredollz.com/home.html",
     image: "/static/img/work/daredollz.jpg",
     summary: "Blog and online shop for Dare Dollz, a custom doll brand.",
   },
